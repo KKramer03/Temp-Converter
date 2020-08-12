@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Temperature Converter</title>
+</head>
+
+<body>
+    <script src='main.js'></script>
+
+    <form id="form1" method="get">
+        <table>
+            <tr>
+                <th>Fahrenheit</th>
+                <th>Celsius</th>
+                <th>Kelvin</th>
+            </tr>
+            <tr>
+                <td><input type="text" id="degF" onchange="convertTemp('F')" size="10" maxlength="10" /></td>
+                <td><input type="text" id="degC" onchange="convertTemp('C')" size="10" maxlength="10" /></td>
+                <td><input type="text" id="degK" onchange="convertTemp('K')" size="10" maxlength="10" /></td>
+            </tr>
+        </table>
+        <p>
+            To compute temperatures, enter a numeric value into one of the boxes and then hit Enter / Return or move to
+            another text box.<br />
+            The value you entered will have a white background. The computed fields will have a pink background.
+        </p>
+    </form>
+
+
+</body>
+
+</html>
